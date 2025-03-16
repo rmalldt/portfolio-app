@@ -56,6 +56,11 @@ const MainNav = () => {
           onItemClick={handleCloseSidebar}
         />
         <MobileNavLink
+          link="/rm"
+          label="About"
+          onItemClick={handleCloseSidebar}
+        />
+        <MobileNavLink
           link="/rm/contact"
           label="Contact"
           onItemClick={handleCloseSidebar}

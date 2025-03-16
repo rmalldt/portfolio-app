@@ -11,15 +11,20 @@
 
 .button {
   border: none;
+  background-color: var(--color-grey-50);
+  text-align: start;
+  flex-basis: 10rem;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-grey-700);
+  flex-basis: 10rem;
 }
 
 .socialSection {
   display: none;
+  flex-basis: 10rem;
 }
 
 .name {

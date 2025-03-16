@@ -40,7 +40,7 @@ body {
   color: var(--color-grey-700);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-grey-100);
+  background-color: var(--color-grey-50);
 }
 
 .wrapper {
