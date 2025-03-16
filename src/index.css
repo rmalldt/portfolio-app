@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --color-grey-0: #fff;
@@ -37,7 +37,7 @@ body {
   font-family: 'Cabin', sans-serif;
   font-weight: 300;
   line-height: 1.8;
-  color: var(--color-grey-900);
+  color: var(--color-grey-700);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-grey-100);

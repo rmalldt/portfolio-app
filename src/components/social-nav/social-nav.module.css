@@ -1,0 +1,27 @@
+.section {
+  list-style: none;
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  background-color: white;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  transition: all 0.15s ease-in;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--color-grey-400);
+  }
+
+  & a {
+    height: 1.25rem;
+  }
+}
