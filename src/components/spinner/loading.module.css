@@ -1,0 +1,15 @@
+.loading {
+  height: 18px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+  border-right-color: black;
+  animation: rotate 0.5s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}

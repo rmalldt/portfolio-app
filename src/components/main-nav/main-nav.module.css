@@ -4,6 +4,7 @@
   padding: 4rem 2rem 2rem 2rem;
   border-bottom: 1px solid transparent;
   background-color: var(--color-grey-100);
+  opacity: 0.9;
 
   display: flex;
   justify-content: space-between;
@@ -91,6 +92,10 @@
 
 .displayBlock {
   display: block;
+}
+
+.copy {
+  padding: 0.5rem 0;
 }
 
 @media (min-width: 750px) {

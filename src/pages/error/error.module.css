@@ -1,0 +1,12 @@
+.heading {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem;
+  text-align: center;
+}
+
+.heading p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: justify;
+}

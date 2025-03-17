@@ -1,6 +1,7 @@
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
 import styles from './main-nav.module.css';
+import pdfFile from '../../assets/CV_RupeshMall.pdf';
 import SocialNav from '../social-nav/social-nav';
 import { Link, NavLink } from 'react-router';
 import React, { useEffect, useState } from 'react';
@@ -9,12 +10,7 @@ const MainNav = () => {
   const [scroll, setScroll] = useState<boolean>(false);
   const [sidebarIsopen, setSideIsOpen] = useState<boolean>(false);
 
-  if (scroll) {
-    console.log('Scrolled!!!');
-  }
-
   const handleScroll = () => {
-    console.log('SCROLL:', window.scrollY);
     if (window.scrollY > 150) {
       setScroll(true);
     } else {
@@ -91,12 +87,16 @@ const MainNav = () => {
           label="Contact"
           onItemClick={handleCloseSidebar}
         />
-        <MobileNavLink
-          link="/"
-          label="Resume"
-          onItemClick={handleCloseSidebar}
-        />
+        <a
+          href={pdfFile}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.mobileNavItem}
+        >
+          Resume
+        </a>
         <SocialNav />
+        <p className={styles.copy}>&copy;Rupesh Mall</p>
       </nav>
     </>
   );

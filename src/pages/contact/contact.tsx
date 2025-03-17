@@ -1,6 +1,9 @@
-import { useActionState } from 'react';
+import { useActionState, useState } from 'react';
 import styles from './contact.module.css';
 import { isEmail, isNotEmpty } from '../../util/validations';
+import ErrorPage from '../error/error';
+import { postMessage } from '../../lib/api';
+import Loading from '../../components/spinner/loading';
 
 type FormInitialData = {
   firstName?: string;
@@ -11,6 +14,8 @@ type FormInitialData = {
 };
 
 function ContactPage() {
+  const [error, setError] = useState<boolean>(false);
+
   const submitAction = async (
     prevFormState: FormInitialData,
     formData: FormData
@@ -38,25 +43,14 @@ function ContactPage() {
     }
 
     try {
-      const response = await fetch(
-        'https://sample-proj-1.netlify.app/.netlify/functions/postMessage',
-        {
-          method: 'POST',
-          headers: {
-            Accept: '*/*',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            email,
-            message,
-          }),
-        }
-      );
-      console.log('Your message is sent.', response);
-    } catch (error) {
-      console.log(error);
+      await postMessage({
+        firstName,
+        lastName,
+        email,
+        message,
+      });
+    } catch (err) {
+      setError(true);
     }
 
     return { errors: null };
@@ -73,10 +67,14 @@ function ContactPage() {
     errors: null,
   });
 
+  if (error) {
+    return <ErrorPage isChildElement={true} />;
+  }
+
   return (
     <section className={styles.section}>
       <p className={styles.title}>Contact</p>
-      <p className={styles.description}>Let Connect!</p>
+      <p className={styles.description}>Lets Connect!</p>
 
       <form action={formAction}>
         <div className={styles.control}>
@@ -110,7 +108,7 @@ function ContactPage() {
         )}
         <div className={styles.formActions}>
           <button className={styles.button} disabled={pending}>
-            {pending ? 'Submitting...' : 'Submit'}
+            {pending ? <Loading /> : 'Submit'}
           </button>
         </div>
       </form>
