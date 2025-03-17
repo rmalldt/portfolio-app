@@ -1,17 +1,26 @@
 .mainNav {
-  width: 90%;
-  margin: 4rem auto 2rem auto;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid gainsboro;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem 2rem;
+  border-bottom: 1px solid transparent;
+  background-color: var(--color-grey-100);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.sticky {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  animation: fadeInFromUp 0.5s ease-out;
+}
+
 .button {
   border: none;
-  background-color: var(--color-grey-50);
+  background-color: var(--color-grey-100);
   text-align: start;
   flex-basis: 10rem;
 }
@@ -20,6 +29,9 @@
   text-decoration: none;
   color: var(--color-grey-700);
   flex-basis: 10rem;
+
+  display: flex;
+  justify-content: center;
 }
 
 .socialSection {
@@ -82,7 +94,24 @@
 }
 
 @media (min-width: 750px) {
+  .mainNav {
+    padding: 4rem 8rem 2rem 8rem;
+  }
+
   .socialSection {
-    display: block;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@keyframes fadeInFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

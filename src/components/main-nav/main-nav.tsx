@@ -3,10 +3,31 @@ import { IoMdClose } from 'react-icons/io';
 import styles from './main-nav.module.css';
 import SocialNav from '../social-nav/social-nav';
 import { Link, NavLink } from 'react-router';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const MainNav = () => {
+  const [scroll, setScroll] = useState<boolean>(false);
   const [sidebarIsopen, setSideIsOpen] = useState<boolean>(false);
+
+  if (scroll) {
+    console.log('Scrolled!!!');
+  }
+
+  const handleScroll = () => {
+    console.log('SCROLL:', window.scrollY);
+    if (window.scrollY > 150) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleToogleButton = () => {
     setSideIsOpen(setSideIsOpen => !setSideIsOpen);
@@ -26,7 +47,12 @@ const MainNav = () => {
         }
         onClick={() => handleCloseSidebar()}
       ></div>
-      <nav className={styles.mainNav}>
+
+      <nav
+        className={
+          scroll ? `${styles.mainNav} ${styles.sticky}` : styles.mainNav
+        }
+      >
         <button className={styles.button} onClick={() => handleToogleButton()}>
           <FiMenu size={25} />
         </button>

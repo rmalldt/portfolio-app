@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+adhoc.ts
+adhoc.js
 
 # Editor directories and files
 .vscode/*
