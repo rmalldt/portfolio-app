@@ -31,7 +31,7 @@ const fetchMutateData = async (
 
 export const postMessage = async (data: object) => {
   const resData = await fetchMutateData(
-    'https://sample-proj-1.netlify.app/.netlify/functions/postMessage',
+    import.meta.env.VITE_NETLIFY_POSTMSG,
     'POST',
     data,
     { 'Content-Type': 'application/json' } as HeadersInit,
