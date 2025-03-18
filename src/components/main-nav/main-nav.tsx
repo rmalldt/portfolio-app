@@ -4,26 +4,10 @@ import styles from './main-nav.module.css';
 import pdfFile from '../../assets/CV_RupeshMall.pdf';
 import SocialNav from '../social-nav/social-nav';
 import { Link, NavLink } from 'react-router';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const MainNav = () => {
-  const [scroll, setScroll] = useState<boolean>(false);
   const [sidebarIsopen, setSideIsOpen] = useState<boolean>(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 150) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const handleToogleButton = () => {
     setSideIsOpen(setSideIsOpen => !setSideIsOpen);
@@ -44,13 +28,9 @@ const MainNav = () => {
         onClick={() => handleCloseSidebar()}
       ></div>
 
-      <nav
-        className={
-          scroll ? `${styles.mainNav} ${styles.sticky}` : styles.mainNav
-        }
-      >
+      <nav className={`${styles.mainNav} ${styles.sticky}`}>
         <button className={styles.button} onClick={() => handleToogleButton()}>
-          <FiMenu size={25} />
+          <FiMenu size={25} fill="white" stroke="white" />
         </button>
         <Link to="/" className={styles.link}>
           <p className={styles.name}>Rupesh Mall</p>
@@ -70,7 +50,7 @@ const MainNav = () => {
           style={{ border: 'none', background: 'none', margin: '2rem 0' }}
           onClick={() => handleCloseSidebar()}
         >
-          <IoMdClose size={30} />
+          <IoMdClose size={30} fill="black" stroke="black" />
         </button>
         <MobileNavLink
           link="/"

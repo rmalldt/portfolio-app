@@ -10,14 +10,20 @@ import styles from './social-nav.module.css';
 const SocialNav: React.FC = () => {
   return (
     <ul className={styles.section}>
-      <SocialNavLink link="https://github.com/rmalldt" icon={SiGithub} />
+      <SocialNavLink
+        link="https://github.com/rmalldt"
+        icon={SiGithub}
+        fill="black"
+      />
       <SocialNavLink
         link="https://www.linkedin.com/in/rupesh-mall-367aa51bb/"
         icon={FaLinkedin}
+        fill="black"
       />
       <SocialNavLink
         link="https://soundcloud.com/beholdarctic"
         icon={SiSoundcloud}
+        fill="black"
       />
     </ul>
   );
@@ -28,13 +34,18 @@ export default SocialNav;
 type SocialNavLinkType = {
   link: string;
   icon: IconType;
+  fill: string;
 };
 
-const SocialNavLink: React.FC<SocialNavLinkType> = ({ link, icon: Icon }) => {
+const SocialNavLink: React.FC<SocialNavLinkType> = ({
+  link,
+  icon: Icon,
+  fill,
+}) => {
   return (
     <li className={styles.icon}>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <Icon size={20} fill="black" stroke="black" />
+        <Icon size={20} fill={fill} stroke={fill} />
       </a>
     </li>
   );

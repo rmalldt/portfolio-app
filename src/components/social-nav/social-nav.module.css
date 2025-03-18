@@ -1,4 +1,6 @@
 .section {
+  width: 100%;
+  margin: 0 auto;
   list-style: none;
 
   display: flex;
@@ -8,8 +10,8 @@
 .icon {
   background-color: white;
   border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   aspect-ratio: 1;
   transition: all 0.15s ease-in;
 

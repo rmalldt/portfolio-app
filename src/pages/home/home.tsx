@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './home.module.css';
-import profileImage from '../../assets/profile.jpg';
+import profileImage from '../../assets/profile1.jpg';
 import pdfFile from '../../assets/CV_RupeshMall.pdf';
 import SocialNav from '../../components/social-nav/social-nav';
 import { NavLink } from 'react-router';

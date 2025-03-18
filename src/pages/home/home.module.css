@@ -1,9 +1,11 @@
 .background {
   height: 100dvh;
+  min-height: 100dvh;
   min-width: 20rem;
   background-image: url('/hero.webp');
   background-size: cover;
   background-position: top;
+  padding-bottom: 5rem;
 
   position: relative;
 
@@ -16,10 +18,9 @@
 .header {
   width: 90%;
   padding: 3rem;
-  color: white;
 
   & img {
-    height: 8rem;
+    height: 3rem;
     aspect-ratio: 1;
     display: block;
     margin: 0 auto;
@@ -41,11 +42,13 @@
   font-weight: 500;
   letter-spacing: 0.2rem;
   color: var(--color-grey-600);
+  color: white;
 }
 
 .description {
   font-size: 1.25rem;
   font-weight: bold;
+  color: white;
 }
 
 .nav {
@@ -62,7 +65,7 @@
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--color-grey-700);
+    color: white;
     transition: all 0.15s ease-in;
 
     &:hover {
@@ -72,6 +75,6 @@
 }
 
 .footer {
-  margin: auto auto 2rem auto;
-  padding: 1rem;
+  bottom: 5rem;
+  position: absolute;
 }
