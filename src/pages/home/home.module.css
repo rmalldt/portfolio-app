@@ -20,41 +20,38 @@
   padding: 3rem;
 
   & img {
-    height: 5rem;
+    height: 10rem;
     aspect-ratio: 1;
     display: block;
     margin: 0 auto;
     object-fit: cover;
-
     border-radius: 50%;
   }
 }
 
 .intro {
   width: 90%;
-  margin: 1rem auto;
+  margin: 4rem auto;
   text-align: center;
 }
 
 .name {
-  font-family: 'Jost', sans-serif;
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
-  color: var(--color-grey-600);
-  color: white;
+  color: var(--color-grey-0);
+  text-shadow: var(--shadow-lg);
 }
 
 .description {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: white;
+  font-size: 1.5rem;
+  color: var(--color-grey-0);
+  text-shadow: var(--shadow-lg);
 }
 
 .nav {
   width: 90%;
-  margin-top: 2rem;
   list-style: none;
+  padding-bottom: 4rem;
 
   display: flex;
   justify-content: center;
@@ -63,18 +60,31 @@
 
   & a {
     text-decoration: none;
-    font-weight: bold;
     text-transform: uppercase;
-    color: white;
+    color: var(--color-grey-0);
+    text-shadow: var(--shadow-lg);
+
     transition: all 0.15s ease-in;
 
     &:hover {
-      color: var(--color-grey-500);
+      color: var(--color-blue-400);
     }
   }
 }
 
 .footer {
-  bottom: 5rem;
+  width: 100%;
+  bottom: 1rem;
   position: absolute;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .name {
+    font-size: 4rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+  }
 }

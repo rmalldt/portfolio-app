@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-  --color-grey-0: #fff;
+  /* Grey colors */
+  --color-grey-0: #ffffff;
   --color-grey-50: #f9fafb;
   --color-grey-100: #f3f4f6;
   --color-grey-200: #e5e7eb;
@@ -13,6 +14,7 @@
   --color-grey-800: #1f2937;
   --color-grey-900: #111827;
 
+  /* Blue colors */
   --color-blue-0: #eff6ff;
   --color-blue-50: #dbeafe;
   --color-blue-100: #bfdbfe;
@@ -25,11 +27,15 @@
   --color-blue-800: #1e3a8a;
   --color-blue-900: #172554;
 
+  /* Additional colors */
+  --color-black: #333;
+  --color-light-bg: #eee;
+
   --backdrop-color: rgba(255, 255, 255, 0.1);
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+  --shadow-lg: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 *,
@@ -42,6 +48,8 @@
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,7 +58,10 @@ body {
   font-weight: 400;
   line-height: 1.8;
   color: var(--color-grey-800);
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: var(--color-light-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-grey-50);
 }
