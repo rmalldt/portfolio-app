@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
   --color-grey-0: #fff;
@@ -46,8 +46,8 @@ html {
 
 body {
   min-height: 100dvh;
-  font-family: 'Cabin', sans-serif;
-  font-weight: 300;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
   line-height: 1.8;
   color: var(--color-grey-800);
   -webkit-font-smoothing: antialiased;
