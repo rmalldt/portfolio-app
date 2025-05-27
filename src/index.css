@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@400;500;600;700&display=swap');
 
 :root {
   /* Grey colors */
@@ -29,12 +29,20 @@
 
   /* Additional colors */
   --color-black: #333;
+  --color-bg: #e5e4e2;
   --color-light-bg: #eee;
+  --charcoal: #36454f;
+
+  --border-black: 0.2rem solid var(--color-grey-900);
+  --border-bold: 0.4rem solid var(--color-grey-700);
+  --border-blue: 0.4rem solid var(--color-blue-700);
+  --border-lightblue: 0.7rem solid var(--color-blue-200);
+  --border-light: 2rem solid var(--color-light-bg);
 
   --backdrop-color: rgba(255, 255, 255, 0.1);
 
   --shadow-sm: 0 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+  --shadow-md: 10rem 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
   --shadow-lg: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -61,7 +69,9 @@ body {
   outline: none;
   border: none;
   text-decoration: none;
-  background-color: var(--color-light-bg);
+  background-color: var(--color-bg);
+  overflow: hidden;
+  transition: all 0.2s linear !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,5 +1,4 @@
 import styles from './about.module.css';
-
 import profile from '../../assets/profile.json';
 
 function AboutPage() {

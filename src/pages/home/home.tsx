@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
     <section className={styles.background}>
       <header className={styles.header}>
-        <img src={profileImage} alt="Profile Picture" />
+        <img src={profileImage} alt="Profile picture" />
       </header>
       <div className={styles.intro}>
         <p className={styles.name}>Rupesh Mall</p>

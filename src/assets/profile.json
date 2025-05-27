@@ -1,5 +1,6 @@
 {
-  "about": "Hi there! I'm Rupesh Mall. I am a software developer with experience in Web and Android app development. I graduated from the University of Hertfordshire with BSc. Computer Science in 2020. I started as an Android developer. In 2021, I joined Tata Consultancy Services where I got exposed to various technologies covering both Web and Mobile platforms. Since then, I have been continuously learning and upskilling. Now, I am seeking new opportunities to expand my knowledge, apply skills and advance in my career.",
+  "about": "I am a software engineer with background in web and mobile development, now transitioning towards platform engineering as I'm always eager to learn and take on new challenges. I graduated from the University of Hertfordshire with BSc. Computer Science in 2020. In 2021, I joined Tata Consultancy Services where I worked as a web developer and then a mobile developer for multiple years before making transition to Backend/DevOps engineer. I recently joined a Cloud/DevOps engineering training program where I got exposure to various tools such as Docker, Terraform, Kubernetes, Ansible, AWS and Azure cloud platforms to manage infrastructure and optimize workflows. I completed the program successfully where I managed and handled a real world project as a part of the training program and now I'm looking for opportunities to expand my skills and stay up to date with the latest technologies. I’m more on the introverted side, so I don’t always say much, but I appreciate good conversations and meaningful connections. Feel free to reach out!",
+
   "education": [
     {
       "level": "BSc. Honours Computer Science",
@@ -12,30 +13,42 @@
   ],
   "experiences": [
     {
+      "company": "Lafosse Academy",
+      "role": "Tech Trainee (Cloud/DevOps)",
+      "date": "March 2025 - May 2025",
+      "description": "Completed Cloud/DevOps deep-dives training program. Successfully produced a real world application (EV battery range distance calculation with displaying EV charging stations over Azure Maps SDK) overlooking GitHub Actions CI/CD pipeline to streamline code integration, test coverage and deployments. Managed and optimized test environments using Github Actions, automated scalable infrastructure provisioning with Terraform and Kubernetes and server configurations with Ansible. Integrated Azure Map SDK using Microsoft Intra ID, wrote the backend logic for fetching Azure auth token, fetch map isochrone data and EV charing stations across the UK map."
+    },
+    {
       "company": "kchauk.com (Startup)",
       "role": "Freelance Developer",
-      "date": "March 2024 - Aug 2024"
+      "date": "March 2024 - Aug 2024",
+      "description": "Contributed to a web platform, a community-driven knowledge-based forum for the Nepalese community specifically targeted for international Nepalese students studying in the UK. Designed and built UI components using TailwindCSS, Context API, and React Query. Discussed and collaborated solutions to deliver a dynamic forum where people can access and create knowledge on various topics (TypeScript, Next.js, TailwindCSS, AWS)."
     },
     {
       "company": "TATA Consultancy Services (Lloyds Banking Group)",
       "role": "Android Developer",
-      "date": "Apr 2022 - Aug 2023"
+      "date": "Apr 2022 - Aug 2023",
+      "description": "Implemented virtual card component in the account overview section. Improved account overview quicklinks personalisation by replacing static quicklinks with dynamic quicklinks driven by the Real Time Interaction Management (RTIM) API. Delivered a POC project by contributing to the implementation of the suggestive search feature and contributed to the incremental migration from Android View System to Jetpack Compose. Worked in an agile scrum environment, taking part in shaping and refinement sessions with PO, BA, and team members contributing to the agile process."
     },
     {
       "company": "TATA Consultancy Services (Graduate Scheme)",
       "role": "Junior Web Developer",
-      "date": "Oct 2021 - Apr 2022"
+      "date": "Oct 2021 - Apr 2022",
+      "description": "Completed TCS graduate training program focused on Java applications and test-driven development. Worked on TCS in-house help desk web application, a part of the larger and cross-functional TCS Ultimatix team. Refactored nearly 60 percent of the frontend codebase and made it modular and reusable using React.js, Redux, React/TanStack Query and CSS modules. Used Jest for test frontend code. Tested existing Spring Boot codebase with JUnit and Mockito."
     },
     {
       "company": "Corpus Ltd (Internship/Android Developer Work Experience)",
       "role": "Android Developer",
-      "date": "May 2021 - Sep 2021"
+      "date": "May 2021 - Sep 2021",
+      "description": "Responsible for Android app development within a larger team for a healthcare solutions provider. Contributed in the migration of Java codebase to Kotlin migrating Android AysncTask with Kotlin Coroutines. Leveraged app performance by using Room for local data persistence and Retrofit for API calls. Followed MVVM architecture, leveraging the usage of Android ViewModel for implementing booking system. Used Google Firebase database service for real-time data synchronisation and followed the best practices for version control using Git and GitHub. Used JUnit4 and MockK for unit testing, JaCoco for static code coverage, and Postman for testing APIs. "
     }
   ],
   "skillsets": {
     "languages": [
       "JavaScript",
       "TypeScript",
+      "Python",
+      "Bash",
       "HTML",
       "CSS",
       "Java",
@@ -62,12 +75,16 @@
       "VSCode",
       "IntelliJ",
       "Android Studio",
-      "MySQLWorkbench",
+      "Docker",
+      "Terraform",
+      "Kubernetes",
+      "Ansible",
+      "Postman",
       "Jira",
       "Confluence",
       "Agile Scrum"
     ],
-    "cloud services": ["AWS", "Supabase"]
+    "cloud services": ["AWS", "Azure"]
   },
   "hobbies": [
     "I play guitar and occasionally write and record music.",

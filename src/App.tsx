@@ -5,6 +5,7 @@ import RootLayout from './pages/layout/root-layout';
 import AboutPage from './pages/about/about';
 import ContactPage from './pages/contact/contact';
 import ErrorPage from './pages/error/error';
+import ProfilePage from './pages/profile/profile';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     path: '/rm',
     element: <RootLayout />,
     children: [
-      { index: true, element: <AboutPage /> },
+      { index: true, element: <ProfilePage /> },
       {
         path: 'contact',
         element: <ContactPage />,

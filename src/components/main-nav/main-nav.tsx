@@ -1,10 +1,11 @@
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
+
 import styles from './main-nav.module.css';
 import pdfFile from '../../assets/CV_RupeshMall.pdf';
 import SocialNav from '../social-nav/social-nav';
-import { Link, NavLink } from 'react-router';
-import React, { useState } from 'react';
 
 const MainNav = () => {
   const [sidebarIsopen, setSideIsOpen] = useState<boolean>(false);
@@ -84,13 +85,13 @@ const MainNav = () => {
 
 export default MainNav;
 
-type MobileNavLinkType = {
+type MobileNavLinkProps = {
   link: string;
   label: string;
   onItemClick: () => void;
 };
 
-const MobileNavLink: React.FC<MobileNavLinkType> = ({
+const MobileNavLink: React.FC<MobileNavLinkProps> = ({
   link,
   label,
   onItemClick,

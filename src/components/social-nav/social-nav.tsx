@@ -31,13 +31,13 @@ const SocialNav: React.FC = () => {
 
 export default SocialNav;
 
-type SocialNavLinkType = {
+type SocialNavLinkProps = {
   link: string;
   icon: IconType;
   fill: string;
 };
 
-const SocialNavLink: React.FC<SocialNavLinkType> = ({
+const SocialNavLink: React.FC<SocialNavLinkProps> = ({
   link,
   icon: Icon,
   fill,

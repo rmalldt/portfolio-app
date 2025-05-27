@@ -1,0 +1,166 @@
+.profile {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.profileImg {
+  flex: 1 1 10rem;
+  text-align: center;
+}
+
+.profileImg img {
+  height: 23rem;
+  aspect-ratio: 1;
+  padding: 1rem;
+  border: var(--border-lightblue);
+}
+
+.salut {
+  flex: 1 1 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.salut h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.salut span {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--color-blue-200);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: var(--border-black);
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  background-color: var(--color-grey-800);
+  color: var(--color-grey-0);
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.heading span {
+  text-transform: uppercase;
+  font-size: 3rem;
+  border-bottom: var(--border-black);
+}
+
+.about {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.aboutMe p {
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+  max-width: 85rem;
+  line-height: 2;
+}
+
+.tags h3 {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 1rem;
+  background-color: var(--color-light-bg);
+  border: var(--border-black);
+  word-break: break-all;
+  font-size: 1rem;
+  font-weight: 500;
+
+  & span {
+    font-weight: lighter;
+  }
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.experienceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.experienceBox {
+  margin: 1rem;
+  color: var(--color-bg);
+  background-color: var(--color-grey-800);
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.2s linear !important;
+  box-shadow: var(--shadow-md);
+
+  flex: 1 1 40rem;
+
+  &:hover {
+    background-color: #36454f;
+    animation: float 0.3s linear;
+  }
+
+  & h3 {
+    padding: 1rem 0;
+    color: var(--color-blue-300);
+
+    & span {
+      font-weight: lighter;
+    }
+  }
+}
+.experienceBox .date {
+  padding: 0.8rem 0;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(1rem);
+  }
+}
+
+@media (min-width: 750px) {
+  .profileImg img {
+    height: 30rem;
+    padding: 1.5rem;
+  }
+}
