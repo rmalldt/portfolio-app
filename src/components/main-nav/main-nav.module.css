@@ -108,8 +108,8 @@
   }
 
   .socialSection {
-    display: flex;
-    justify-content: end;
+    display: block;
+    justify-content: flex-end;
   }
 }
 

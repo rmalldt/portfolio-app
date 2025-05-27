@@ -12,9 +12,14 @@
   ],
   "experiences": [
     {
+      "company": "kchauk.com (Startup)",
+      "role": "Freelance Developer",
+      "date": "March 2024 - Aug 2024"
+    },
+    {
       "company": "TATA Consultancy Services (Lloyds Banking Group)",
       "role": "Android Developer",
-      "date": "Apr 2022 - Feb 2024"
+      "date": "Apr 2022 - Aug 2023"
     },
     {
       "company": "TATA Consultancy Services (Graduate Scheme)",
@@ -47,6 +52,7 @@
       "Jetpack Compose",
       "Kotlin Coroutines",
       "Dagger Hilt",
+      "JUnit",
       "Mockito"
     ],
     "databases": ["SQLite", "MySQL", "MongoDB"],
@@ -60,7 +66,8 @@
       "Jira",
       "Confluence",
       "Agile Scrum"
-    ]
+    ],
+    "cloud services": ["AWS", "Supabase"]
   },
   "hobbies": [
     "I play guitar and occasionally write and record music.",
