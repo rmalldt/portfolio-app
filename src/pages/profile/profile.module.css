@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
 .profileImg {
@@ -76,6 +77,7 @@
 .about {
   text-align: center;
   min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
 .aboutMe p {
@@ -115,6 +117,7 @@
   align-items: center;
   gap: 1rem;
   min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
 .experienceBox {
@@ -156,6 +159,7 @@
   align-items: center;
   gap: 1rem;
   min-height: 100vh;
+  margin-bottom: 10rem;
 }
 
 .skillBox {
@@ -250,5 +254,17 @@
   .profileImg img {
     height: 30rem;
     padding: 1.5rem;
+  }
+
+  .intro {
+    margin-bottom: 0;
+  }
+
+  .aboutMe {
+    margin-bottom: 0;
+  }
+
+  .skills {
+    margin-bottom: 0;
   }
 }

@@ -17,7 +17,7 @@ const ProfilePage: React.FC = () => {
 
   return (
     <div className={styles.profile}>
-      <section className={styles.intro}>
+      <section className={styles.intro} id="intro">
         <div className={styles.profileImg}>
           <img src={profileImage} alt="Profile picture" />
         </div>
@@ -67,6 +67,7 @@ const ProfilePage: React.FC = () => {
             description={experiences[0].description}
             icon={FaCog}
             fill="var(--color-blue-400)"
+            key={experiences[0].company}
           />
           <ExperienceBox
             role={experiences[1].role}
@@ -75,6 +76,7 @@ const ProfilePage: React.FC = () => {
             description={experiences[1].description}
             icon={FaCode}
             fill="var(--color-blue-400)"
+            key={experiences[1].company}
           />
           <ExperienceBox
             role={experiences[2].role}
@@ -83,6 +85,7 @@ const ProfilePage: React.FC = () => {
             description={experiences[2].description}
             icon={FaMobileAlt}
             fill="var(--color-blue-400)"
+            key={experiences[2].company}
           />
           <ExperienceBox
             role={experiences[3].role}
@@ -91,6 +94,7 @@ const ProfilePage: React.FC = () => {
             description={experiences[3].description}
             icon={FaCode}
             fill="var(--color-blue-400)"
+            key={experiences[3].company}
           />
           <ExperienceBox
             role={experiences[4].role}
@@ -99,6 +103,7 @@ const ProfilePage: React.FC = () => {
             description={experiences[4].description}
             icon={FaMobileAlt}
             fill="var(--color-blue-400)"
+            key={experiences[4].company}
           />
         </div>
       </section>
@@ -108,7 +113,7 @@ const ProfilePage: React.FC = () => {
         </h3>
         <div className={styles.boxContainer}>
           <SkillBox
-            skill="Language"
+            skill="Languages"
             items={skillsets.languages}
             icon={FaCode}
             fill="var(--color-blue-400)"
@@ -132,7 +137,7 @@ const ProfilePage: React.FC = () => {
             fill="var(--color-blue-400)"
           />
           <SkillBox
-            skill="Cloud services"
+            skill="Cloud platforms"
             items={skillsets['cloud services']}
             icon={FaCloud}
             fill="var(--color-blue-400)"
@@ -203,7 +208,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({
       <h3>{skill}</h3>
       <ul>
         {items.map(item => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </div>

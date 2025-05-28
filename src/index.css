@@ -39,7 +39,7 @@
   --border-lightblue: 0.7rem solid var(--color-blue-200);
   --border-light: 2rem solid var(--color-light-bg);
 
-  --backdrop-color: rgba(255, 255, 255, 0.1);
+  --backdrop-color: rgba(0, 0, 0, 0.3);
 
   --shadow-sm: 0 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
   --shadow-md: 10rem 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
