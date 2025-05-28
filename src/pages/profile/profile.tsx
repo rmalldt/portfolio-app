@@ -10,9 +10,10 @@ import { FaCloud } from 'react-icons/fa';
 import styles from './profile.module.css';
 import profileImage from '../../assets/profile.jpg';
 import profile from '../../assets/profile.json';
+import Copyright from '../../components/copyright/copyright';
 
 const ProfilePage: React.FC = () => {
-  const { about, experiences, skillsets } = profile;
+  const { about, experiences, skillsets, hobbies } = profile;
 
   return (
     <div className={styles.profile}>
@@ -36,7 +37,7 @@ const ProfilePage: React.FC = () => {
           <p>{about}</p>
           <div className={styles.tags}>
             <h3>
-              <span>Originally from: </span>Nepal (ILR Holder)
+              <span>Originally from: </span>Nepal (ILR)
             </h3>
             <h3>
               <span>Email: </span>rmall.dt@gmail.com
@@ -45,7 +46,7 @@ const ProfilePage: React.FC = () => {
               <span>Based in: </span>West London
             </h3>
             <h3>
-              <span>Languages: </span>English, Nepali, Hindi
+              <span>Languages: </span>English, Nepali
             </h3>
             <h3>
               <span>Education: </span>BSc. Computer Science (Software
@@ -58,7 +59,7 @@ const ProfilePage: React.FC = () => {
         <h3 className={styles.heading}>
           <span>Experience</span>
         </h3>
-        <div className={styles.experienceContainer}>
+        <div className={styles.boxContainer}>
           <ExperienceBox
             role={experiences[0].role}
             company={experiences[0].company}
@@ -105,7 +106,7 @@ const ProfilePage: React.FC = () => {
         <h3 className={styles.heading}>
           <span>Skills</span>
         </h3>
-        <div className={styles.skillsContainer}>
+        <div className={styles.boxContainer}>
           <SkillBox
             skill="Language"
             items={skillsets.languages}
@@ -138,6 +139,16 @@ const ProfilePage: React.FC = () => {
           />
         </div>
       </section>
+      <section className={styles.hobbies} id="hobbies">
+        <h3 className={styles.heading}>
+          <span>Hobbies</span>
+        </h3>
+        <div className={styles.boxContainer}>
+          <HobbiesBox image="/music.webp" description={hobbies[0]} />
+          <HobbiesBox image="/running.webp" description={hobbies[1]} />
+        </div>
+      </section>
+      <Copyright />
     </div>
   );
 };
@@ -195,6 +206,24 @@ const SkillBox: React.FC<SkillBoxProps> = ({
           <li>{item}</li>
         ))}
       </ul>
+    </div>
+  );
+};
+
+type HobbiesBoxProps = {
+  image: string;
+  description: string;
+};
+
+const HobbiesBox: React.FC<HobbiesBoxProps> = ({ image, description }) => {
+  return (
+    <div className={styles.hobbyBox}>
+      <div className={styles.imageBox}>
+        <img src={image} alt="" />
+      </div>
+      <div className={styles.textBox}>
+        <p>{description}</p>
+      </div>
     </div>
   );
 };

@@ -100,6 +100,14 @@
   }
 }
 
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .experience {
   display: flex;
   flex-direction: column;
@@ -107,13 +115,6 @@
   align-items: center;
   gap: 1rem;
   min-height: 100vh;
-}
-
-.experienceContainer {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
 }
 
 .experienceBox {
@@ -157,14 +158,6 @@
   min-height: 100vh;
 }
 
-.skillsContainer {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 .skillBox {
   margin: 1rem;
   color: var(--color-bg);
@@ -191,6 +184,55 @@
 
 .skillBox ul {
   list-style: none;
+}
+
+.hobbies {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.hobbyBox {
+  max-width: 25rem;
+  max-height: 25rem;
+  margin: 1.5rem;
+
+  position: relative;
+
+  flex: 1 1 25rem;
+}
+
+.imageBox {
+  overflow: hidden;
+
+  &:hover img {
+    transform: scale(1.5);
+  }
+}
+
+.imageBox img {
+  height: 25rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform 1s;
+  opacity: 0.8;
+  box-shadow: var(--shadow-md);
+}
+
+.textBox {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: var(--color-blue-100);
+
+  & p {
+    font-size: 0.8rem;
+  }
 }
 
 @keyframes float {

@@ -68,7 +68,7 @@
       "JUnit",
       "Mockito"
     ],
-    "databases": ["SQLite", "MySQL", "MongoDB"],
+    "databases": ["SQLite", "PostgreSQL", "MongoDB"],
     "tools": [
       "Git",
       "GitHub",
@@ -87,7 +87,7 @@
     "cloud services": ["AWS", "Azure"]
   },
   "hobbies": [
-    "I play guitar and occasionally write and record music.",
-    "I like running and often take part in local running events."
+    "I enjoy playing guitar and occasionally write and record music.",
+    "I like running and it is a way I maintain a regular fitness routine. I also like going for walks to relax and clear my mind."
   ]
 }

@@ -11,7 +11,7 @@ const Copyright: React.FC<CopyrightProps> = ({
 }) => {
   return (
     <div className={styles.section}>
-      <p style={{ color }}>Designed and built by Rupesh Mall@2025</p>
+      <p style={{ color }}>Designed and built by RupeshMall@2025</p>
     </div>
   );
 };
