@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding: 2rem;
   border-bottom: 1px solid transparent;
-  opacity: 0.9;
   transform: translateY(0); /* initially hidden */
   transition: 0.3s ease-in;
 

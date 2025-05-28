@@ -29,7 +29,7 @@ const SideNav: React.FC<SideNavProps> = ({
       <ul>
         <SideNavItem
           title="Rupesh Mall"
-          link="#intro"
+          link="/rm#intro"
           icon={FaCode}
           fill="var(--color-grey-700)"
           key="intro"
@@ -45,7 +45,7 @@ const SideNav: React.FC<SideNavProps> = ({
         />
         <SideNavItem
           title="About"
-          link="#about"
+          link="/rm#about"
           icon={FaUser}
           fill="var(--color-grey-700)"
           key="about"
@@ -53,7 +53,7 @@ const SideNav: React.FC<SideNavProps> = ({
         />
         <SideNavItem
           title="Experience"
-          link="#experience"
+          link="/rm#experience"
           icon={FaBriefcase}
           fill="var(--color-grey-700)"
           key="experience"
@@ -61,7 +61,7 @@ const SideNav: React.FC<SideNavProps> = ({
         />
         <SideNavItem
           title="Skills"
-          link="#skills"
+          link="/rm#skills"
           icon={FaBolt}
           fill="var(--color-grey-700)"
           key="skills"
@@ -69,7 +69,7 @@ const SideNav: React.FC<SideNavProps> = ({
         />
         <SideNavItem
           title="Hobbies"
-          link="#hobbies"
+          link="/rm#hobbies"
           icon={FaGamepad}
           fill="var(--color-grey-700)"
           key="hobbies"

@@ -72,7 +72,7 @@ function ContactPage() {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.contact}>
       <p className={styles.title}>Contact</p>
       <p className={styles.description}>Lets Connect!</p>
 
