@@ -11,6 +11,7 @@ import styles from './profile.module.css';
 import profileImage from '../../assets/profile.jpg';
 import profile from '../../assets/profile.json';
 import Copyright from '../../components/copyright/copyright';
+import ScrollToTopButton from '../../components/buttons/scroll-totop';
 
 const ProfilePage: React.FC = () => {
   const { about, experiences, skillsets, hobbies } = profile;
@@ -153,6 +154,7 @@ const ProfilePage: React.FC = () => {
           <HobbiesBox image="/running.webp" description={hobbies[1]} />
         </div>
       </section>
+      <ScrollToTopButton />
       <Copyright />
     </div>
   );
