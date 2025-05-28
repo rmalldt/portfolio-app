@@ -5,6 +5,7 @@ import ErrorPage from '../error/error';
 import { postMessage } from '../../lib/api';
 import Loading from '../../components/spinner/loading';
 import MessageModal from '../../components/modal/message-modal';
+import Copyright from '../../components/copyright/copyright';
 
 type FormInitialData = {
   firstName?: string;
@@ -99,12 +100,12 @@ const ContactPage: React.FC = () => {
   }
 
   return (
-    <>
+    <div className={styles.contact}>
       <MessageModal
         isOpen={isMessageModalOpen}
         message="Message sent successfully."
       />
-      <section className={styles.contact}>
+      <section className={styles.form}>
         <p className={styles.title}>Contact</p>
         <p className={styles.description}>Lets Connect!</p>
 
@@ -150,7 +151,8 @@ const ContactPage: React.FC = () => {
           </div>
         </form>
       </section>
-    </>
+      <Copyright />
+    </div>
   );
 };
 

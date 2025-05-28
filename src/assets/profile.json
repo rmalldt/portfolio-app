@@ -1,5 +1,5 @@
 {
-  "about": "I am a software engineer with background in web and mobile development, now transitioning towards platform engineering as I'm always eager to learn and take on new challenges. I graduated from the University of Hertfordshire with BSc. Computer Science in 2020. In 2021, I joined Tata Consultancy Services where I worked as a web developer and then a mobile developer for multiple years before making transition to Backend/DevOps engineer. I recently joined a Cloud/DevOps engineering training program where I got exposure to various tools such as Docker, Terraform, Kubernetes, Ansible, AWS and Azure cloud platforms to manage infrastructure and optimize workflows. I completed the program successfully where I managed and handled a real world project as a part of the training program and now I'm looking for opportunities to expand my skills and stay up to date with the latest technologies. I’m more on the introverted side, so I don’t always say much, but I appreciate good conversations and meaningful connections. Feel free to reach out!",
+  "about": "I am a software engineer with background in web and mobile development, now transitioning towards platform engineering as I'm always eager to learn and take on new challenges. I graduated from the University of Hertfordshire with BSc. Computer Science in 2020. In 2021, I joined Tata Consultancy Services where I worked as a web developer and then a mobile developer for multiple years before making transition to Backend/DevOps engineer. I recently joined a Cloud/DevOps engineering training program where I got exposure to various tools such as Docker, Terraform, Kubernetes, Ansible, AWS and Azure cloud platforms to manage infrastructure and optimize workflows. I completed the program successfully where I developed and managed  a real world project as a part of the training program and now I'm looking for opportunities to expand my skills and stay up to date with the latest technologies. I’m more on the introverted side, so I don’t always say much, but I appreciate good conversations and meaningful connections. Feel free to reach out!",
 
   "education": [
     {
@@ -88,6 +88,6 @@
   },
   "hobbies": [
     "I enjoy playing guitar and occasionally write and record music.",
-    "I like running and it is a way I maintain a regular fitness routine. I also like going for walks to relax and clear my mind."
+    "I like running and it is how I maintain a regular fitness routine. I also like going for walks to relax and clear my mind."
   ]
 }

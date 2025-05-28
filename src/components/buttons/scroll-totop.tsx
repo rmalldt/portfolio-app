@@ -4,8 +4,6 @@ import styles from './scroll-totop.module.css';
 const ScrollToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  console.log(window.scrollY);
-
   const toggleVisibility = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
