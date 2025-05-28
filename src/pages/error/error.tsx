@@ -7,7 +7,13 @@ const ErrorPage: React.FC<{ isChildElement: boolean }> = ({
 }) => {
   return (
     <div>
-      {!isChildElement && <MainNav />}
+      {!isChildElement && (
+        <MainNav
+          sidebarIsOpen={false}
+          onToogleButton={() => {}}
+          onSetSidebarClose={() => {}}
+        />
+      )}
       <header className={styles.heading}>
         <p>
           Page not found or something went wrong. Please try other links or try

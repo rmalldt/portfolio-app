@@ -1,0 +1,31 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--backdrop-color);
+  z-index: 50;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  color: initial;
+  background-color: var(--color-grey-100);
+
+  animation: slide-in-from-top 0.35s ease-out;
+}
+
+@keyframes slide-in-from-top {
+  0% {
+    transform: translateY(-15%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

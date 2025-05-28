@@ -1,7 +1,8 @@
 import styles from './about.module.css';
 import profile from '../../assets/profile.json';
+import React from 'react';
 
-function AboutPage() {
+const AboutPage: React.FC = () => {
   const { about, education, experiences, skillsets, hobbies } = profile;
 
   const skills = {
@@ -60,6 +61,6 @@ function AboutPage() {
       </div>
     </section>
   );
-}
+};
 
 export default AboutPage;
