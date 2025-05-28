@@ -3,12 +3,16 @@ import { IconType } from 'react-icons';
 import { FaCode } from 'react-icons/fa';
 import { FaMobileAlt } from 'react-icons/fa';
 import { FaCog } from 'react-icons/fa';
+import { FaArchive } from 'react-icons/fa';
+import { FaDatabase } from 'react-icons/fa';
+import { FaTools } from 'react-icons/fa';
+import { FaCloud } from 'react-icons/fa';
 import styles from './profile.module.css';
 import profileImage from '../../assets/profile.jpg';
 import profile from '../../assets/profile.json';
 
 const ProfilePage: React.FC = () => {
-  const { about, experiences } = profile;
+  const { about, experiences, skillsets } = profile;
 
   return (
     <div className={styles.profile}>
@@ -50,7 +54,6 @@ const ProfilePage: React.FC = () => {
           </div>
         </div>
       </section>
-
       <section className={styles.experience} id="experience">
         <h3 className={styles.heading}>
           <span>Experience</span>
@@ -98,6 +101,43 @@ const ProfilePage: React.FC = () => {
           />
         </div>
       </section>
+      <section className={styles.skills} id="skills">
+        <h3 className={styles.heading}>
+          <span>Skills</span>
+        </h3>
+        <div className={styles.skillsContainer}>
+          <SkillBox
+            skill="Language"
+            items={skillsets.languages}
+            icon={FaCode}
+            fill="var(--color-blue-400)"
+          />
+          <SkillBox
+            skill="Libraries"
+            items={skillsets.libraries}
+            icon={FaArchive}
+            fill="var(--color-blue-400)"
+          />
+          <SkillBox
+            skill="Tools"
+            items={skillsets.tools}
+            icon={FaTools}
+            fill="var(--color-blue-400)"
+          />
+          <SkillBox
+            skill="Databases"
+            items={skillsets.databases}
+            icon={FaDatabase}
+            fill="var(--color-blue-400)"
+          />
+          <SkillBox
+            skill="Cloud services"
+            items={skillsets['cloud services']}
+            icon={FaCloud}
+            fill="var(--color-blue-400)"
+          />
+        </div>
+      </section>
     </div>
   );
 };
@@ -129,6 +169,32 @@ const ExperienceBox: React.FC<ExperienceBoxProps> = ({
       </h3>
       <p className={styles.date}>{date}</p>
       <p>{description}</p>
+    </div>
+  );
+};
+
+type SkillBoxProps = {
+  skill: string;
+  items: string[];
+  icon: IconType;
+  fill: string;
+};
+
+const SkillBox: React.FC<SkillBoxProps> = ({
+  skill,
+  items,
+  icon: Icon,
+  fill,
+}) => {
+  return (
+    <div className={styles.skillBox}>
+      <Icon size={40} fill={fill} stroke={fill} />
+      <h3>{skill}</h3>
+      <ul>
+        {items.map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 };

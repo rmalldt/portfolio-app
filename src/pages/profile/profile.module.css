@@ -133,18 +133,64 @@
     background-color: #36454f;
     animation: float 0.3s linear;
   }
+}
 
-  & h3 {
-    padding: 1rem 0;
-    color: var(--color-blue-300);
+.experienceBox h3 {
+  padding: 1rem 0;
+  color: var(--color-blue-300);
 
-    & span {
-      font-weight: lighter;
-    }
+  & span {
+    font-weight: lighter;
   }
 }
+
 .experienceBox .date {
   padding: 0.8rem 0;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skillBox {
+  margin: 1rem;
+  color: var(--color-bg);
+  background-color: var(--color-grey-800);
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.2s linear !important;
+  box-shadow: var(--shadow-md);
+
+  flex: 1 1 10rem;
+
+  &:hover {
+    background-color: #36454f;
+    animation: float 0.3s linear;
+  }
+}
+
+.skillBox h3 {
+  padding: 1rem 0;
+  color: var(--color-blue-300);
+}
+
+.skillBox ul {
+  list-style: none;
 }
 
 @keyframes float {

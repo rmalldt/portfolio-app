@@ -45,21 +45,21 @@
   ],
   "skillsets": {
     "languages": [
+      "Java",
+      "Kotlin",
       "JavaScript",
       "TypeScript",
       "Python",
       "Bash",
       "HTML",
       "CSS",
-      "Java",
-      "Kotlin",
       "C"
     ],
     "libraries": [
       "React.js",
-      "Tailwind CSS",
-      "Next.js",
       "Node.js (Express)",
+      "Next.js",
+      "Tailwind CSS",
       "Jest",
       "Android SDK",
       "Jetpack Compose",
@@ -71,7 +71,7 @@
     "databases": ["SQLite", "MySQL", "MongoDB"],
     "tools": [
       "Git",
-      "Github",
+      "GitHub",
       "VSCode",
       "IntelliJ",
       "Android Studio",
