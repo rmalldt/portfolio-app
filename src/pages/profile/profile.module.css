@@ -203,13 +203,13 @@
 }
 
 .hobbyBox {
-  max-width: 25rem;
-  max-height: 25rem;
-  margin: 1.5rem;
+  max-width: 23rem;
+  max-height: 23rem;
+  margin: 1rem;
 
   position: relative;
 
-  flex: 1 1 25rem;
+  flex: 1 1 23rem;
 }
 
 .imageBox {
@@ -221,7 +221,7 @@
 }
 
 .imageBox img {
-  height: 25rem;
+  height: 23rem;
   aspect-ratio: 1;
   object-fit: cover;
   transition: transform 1s;
@@ -231,11 +231,12 @@
 
 .textBox {
   position: absolute;
-  padding: 0.5rem 1rem;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
+  padding: 0.5rem 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.3rem;
   background-color: var(--color-blue-100);
+  text-align: justify;
 
   & p {
     font-size: 0.8rem;
