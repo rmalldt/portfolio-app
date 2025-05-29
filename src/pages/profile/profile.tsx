@@ -3,10 +3,11 @@ import { IconType } from 'react-icons';
 import { FaCode } from 'react-icons/fa';
 import { FaMobileAlt } from 'react-icons/fa';
 import { FaCog } from 'react-icons/fa';
-import { FaArchive } from 'react-icons/fa';
+import { FaChrome } from 'react-icons/fa';
 import { FaDatabase } from 'react-icons/fa';
 import { FaTools } from 'react-icons/fa';
 import { FaCloud } from 'react-icons/fa';
+import { GoGitCompare } from 'react-icons/go';
 import styles from './profile.module.css';
 import profileImage from '../../assets/profile.jpg';
 import profile from '../../assets/profile.json';
@@ -75,7 +76,7 @@ const ProfilePage: React.FC = () => {
             company={experiences[1].company}
             date={experiences[1].date}
             description={experiences[1].description}
-            icon={FaCode}
+            icon={FaChrome}
             fill="var(--color-blue-400)"
             key={experiences[1].company}
           />
@@ -93,7 +94,7 @@ const ProfilePage: React.FC = () => {
             company={experiences[3].company}
             date={experiences[3].date}
             description={experiences[3].description}
-            icon={FaCode}
+            icon={FaChrome}
             fill="var(--color-blue-400)"
             key={experiences[3].company}
           />
@@ -120,27 +121,27 @@ const ProfilePage: React.FC = () => {
             fill="var(--color-blue-400)"
           />
           <SkillBox
-            skill="Libraries"
-            items={skillsets.libraries}
-            icon={FaArchive}
-            fill="var(--color-blue-400)"
-          />
-          <SkillBox
-            skill="Tools"
-            items={skillsets.tools}
+            skill="Libraries and Frameworks"
+            items={skillsets.libraries_frameworks}
             icon={FaTools}
             fill="var(--color-blue-400)"
           />
           <SkillBox
-            skill="Databases"
-            items={skillsets.databases}
+            skill="Cloud and DevOps"
+            items={skillsets.cloud_devops}
+            icon={FaCloud}
+            fill="var(--color-blue-400)"
+          />
+          <SkillBox
+            skill="Database Management"
+            items={skillsets.database_management}
             icon={FaDatabase}
             fill="var(--color-blue-400)"
           />
           <SkillBox
-            skill="Cloud platforms"
-            items={skillsets['cloud services']}
-            icon={FaCloud}
+            skill="Version control, CI/CD and Project Management"
+            items={skillsets.versioncontrol_cicd_projectmanagement}
+            icon={GoGitCompare}
             fill="var(--color-blue-400)"
           />
         </div>

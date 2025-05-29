@@ -87,13 +87,13 @@
   justify-content: center;
   align-items: center;
   min-width: 1rem;
-  height: 5rem;
+  height: 3.8rem;
   font-size: 1rem;
 }
 
 .sidebar ul li a .title {
   position: relative;
-  height: 5rem;
+  height: 3.8rem;
   display: flex;
   color: var(--color-grey-700);
   align-items: center;
