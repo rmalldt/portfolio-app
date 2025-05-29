@@ -3,6 +3,7 @@ import styles from './root-layout.module.css';
 import SideNav from '../../components/side-nav/side-nav';
 import MainNav from '../../components/main-nav/main-nav';
 import React, { useState } from 'react';
+import Copyright from '../../components/copyright/copyright';
 
 const RootLayout: React.FC = () => {
   const [sidebarIsopen, setSideIsOpen] = useState<boolean>(false);
@@ -28,6 +29,9 @@ const RootLayout: React.FC = () => {
           onSetSidebarClose={handleCloseSidebar}
         />
         <Outlet />
+        <footer className={styles.footer}>
+          <Copyright />
+        </footer>
       </main>
     </div>
   );

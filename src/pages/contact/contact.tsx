@@ -151,7 +151,6 @@ const ContactPage: React.FC = () => {
           </div>
         </form>
       </section>
-      <Copyright />
     </div>
   );
 };

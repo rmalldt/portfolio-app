@@ -10,4 +10,13 @@
   max-width: 75rem;
   min-width: 20rem;
   margin: 0 auto;
+
+  position: relative;
+}
+
+.footer {
+  width: 100%;
+  bottom: 1rem;
+  position: absolute;
+  text-align: center;
 }

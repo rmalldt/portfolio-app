@@ -156,7 +156,6 @@ const ProfilePage: React.FC = () => {
         </div>
       </section>
       <ScrollToTopButton />
-      <Copyright />
     </div>
   );
 };
