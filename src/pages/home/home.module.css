@@ -15,7 +15,8 @@
 
 .header {
   width: 90%;
-  padding: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 
   & img {
     height: 10rem;
@@ -29,7 +30,7 @@
 
 .intro {
   width: 90%;
-  margin: 4rem auto;
+  margin: 1rem auto;
   text-align: center;
 }
 
@@ -49,7 +50,7 @@
 .nav {
   width: 90%;
   list-style: none;
-  padding-bottom: 4rem;
+  padding: 2rem;
 
   display: flex;
   justify-content: center;
