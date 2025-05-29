@@ -11,7 +11,6 @@ import { GoGitCompare } from 'react-icons/go';
 import styles from './profile.module.css';
 import profileImage from '../../assets/profile.jpg';
 import profile from '../../assets/profile.json';
-import Copyright from '../../components/copyright/copyright';
 import ScrollToTopButton from '../../components/buttons/scroll-totop';
 
 const ProfilePage: React.FC = () => {

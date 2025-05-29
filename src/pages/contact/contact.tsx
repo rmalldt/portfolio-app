@@ -5,7 +5,6 @@ import ErrorPage from '../error/error';
 import { postMessage } from '../../lib/api';
 import Loading from '../../components/spinner/loading';
 import MessageModal from '../../components/modal/message-modal';
-import Copyright from '../../components/copyright/copyright';
 
 type FormInitialData = {
   firstName?: string;
