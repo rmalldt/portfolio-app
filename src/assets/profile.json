@@ -1,5 +1,5 @@
 {
-  "about": "I'm a software engineer with a background in web and Android application development. Currently, transitioning into Platform/DevOps engineering with a strong passion for solving complex problems and delivering value through innovative technology. After graduating with BSc. in Computer Science from the University of Hertfordshire in 2020, I joined Tata Consultancy Services in 2021. There, I worked as both a web developer and a mobile developer for multiple years before shifting my focus to backend and DevOps engineering. Most recently, I completed a Cloud/DevOps engineering training programme where I gained hands-on experience with tools such as Docker, Terraform, Kubernetes, Ansible and cloud platforms like AWS and Azure. As a part of the programme, I led the development and deployment of a real-world project which helped me strengthen my skills in infrastructure management and workflow automation. I'm always looking to learn, grow and stay up to date with emerging technologies. While I tend to be more on the introverted side, I appreciate and value thoughtful conversations and meaningful connections - so feel free to reach out!",
+  "about": "I'm a software engineer with a background in Web and Android application development. Currently, transitioning into Platform/DevOps engineering with a strong passion for solving complex problems and delivering value through innovative technology. After graduating with BSc. in Computer Science from the University of Hertfordshire in 2020, I joined Tata Consultancy Services in 2021. There, I worked as both a web developer and a mobile developer for multiple years before shifting my focus to backend and DevOps engineering. Most recently, I completed a Cloud/DevOps engineering training programme where I gained hands-on experience with tools such as Docker, Terraform, Kubernetes, Ansible and cloud platforms like AWS and Azure. As a part of the programme, I led the development and deployment of a real-world project which helped me strengthen my skills in infrastructure management and workflow automation. I'm always looking to learn, grow and stay up to date with emerging technologies. While I tend to be more on the introverted side, I appreciate and value thoughtful conversations and meaningful connections, so feel free to reach out!",
   "education": [
     {
       "level": "BSc. Honours Computer Science",
@@ -14,8 +14,8 @@
     {
       "company": "Lafosse Academy",
       "role": "Tech Trainee (Cloud/DevOps)",
-      "date": "March 2025 - May 2025",
-      "description": "Completed a Cloud/DevOps deep-dive training programme gaining hands-on experience with infrastructure management, automation, and cloud technologies. Led a real-world project “a tool to view EV battery range with nearby EV charging stations” managing a GitHub Actions CI/CD pipeline to streamline code integration, testing, and deployment on AWS. Automated scalable infrastructure provisioning using Terraform and Kubernetes and handled server configuration with Ansible. Integrated the Azure Maps SDK, and developed backend logic to fetch Azure Map auth tokens, isochrone data and EV charging stations across the UK."
+      "date": "March 2025 - June 2025",
+      "description": "Completed a Cloud/DevOps deep-dive training programme gaining hands-on experience with infrastructure management, automation, and cloud technologies. Led a real-world project “a tool to view EV battery range with nearby EV charging stations” managing a GitHub Actions CI/CD pipeline to streamline code integration, testing, and deployment on AWS EKS. Automated scalable infrastructure provisioning using Terraform and Kubernetes. Integrated the Azure Maps SDK, and developed backend logic to fetch Azure Map auth tokens, isochrone data and EV charging stations across the UK."
     },
     {
       "company": "kchauk.com (Startup)",
@@ -44,37 +44,34 @@
   ],
   "skillsets": {
     "languages": [
-      "JavaScript",
-      "TypeScript",
+      "Java",
       "Python",
-      "Bash",
+      "JavaScript/TypeScript",
       "HTML",
       "CSS",
-      "Java",
-      "Kotlin",
+      "bash",
       "C"
     ],
     "libraries_frameworks": [
       "React.js",
       "Node.js (Express)",
-      "Next.js",
       "Tailwind CSS",
       "Jest",
-      "Android SDK",
-      "Jetpack Compose",
-      "Kotlin Coroutines",
-      "Dagger Hilt",
+      "JDK 17",
+      "Spring Boot 3",
+      "JPA/Hibernate",
       "JUnit",
-      "Mockito"
+      "Mockito",
+      "FastAPI",
+      "PyTest",
+      "NumPy"
     ],
-    "cloud_devops": ["Docker", "Terraform", "Kubernetes", "Ansible", "AWS"],
-    "database_management": ["SQLite", "PostgreSQL", "MongoDB"],
+    "cloud_devops": ["Docker", "Kubernetes", "Terraform", "Ansible", "AWS"],
+    "database_management": ["PostgreSQL", "SQLite", "MongoDB"],
     "versioncontrol_cicd_projectmanagement": [
       "Git",
       "GitHub",
       "GitHub Actions",
-      "Jenkins",
-      "Azure DevOps",
       "Agile Scrum",
       "Jira",
       "Confluence"

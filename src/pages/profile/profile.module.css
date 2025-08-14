@@ -198,6 +198,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
   min-height: 100vh;
   margin-bottom: 3rem;
 }
