@@ -75,3 +75,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.fallback {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-size: 18px;
+  color: var(--color-grey-800);
+  text-align: center;
+}

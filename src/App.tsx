@@ -1,25 +1,42 @@
+import { lazy, Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 
 import HomePage from './pages/home/home';
 import RootLayout from './pages/layout/root-layout';
-import ContactPage from './pages/contact/contact';
-import ErrorPage from './pages/error/error';
-import ProfilePage from './pages/profile/profile';
+
+const ContactPage = lazy(() => import('./pages/contact/contact'));
+const ErrorPage = lazy(() => import('./pages/error/error'));
+const ProfilePage = lazy(() => import('./pages/profile/profile'));
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
-    errorElement: <ErrorPage isChildElement={false} />,
+    errorElement: (
+      <Suspense fallback={<div className="fallback">Loading...</div>}>
+        <ErrorPage isChildElement={false} />
+      </Suspense>
+    ),
   },
   {
     path: '/rm',
     element: <RootLayout />,
     children: [
-      { index: true, element: <ProfilePage /> },
+      {
+        index: true,
+        element: (
+          <Suspense fallback={<div className="fallback">Loading...</div>}>
+            <ProfilePage />
+          </Suspense>
+        ),
+      },
       {
         path: 'contact',
-        element: <ContactPage />,
+        element: (
+          <Suspense fallback={<div className="fallback">Loading...</div>}>
+            <ContactPage />
+          </Suspense>
+        ),
       },
     ],
   },
