@@ -97,15 +97,6 @@ const ProfilePage: React.FC = () => {
             fill="var(--color-blue-400)"
             key={experiences[3].company}
           />
-          <ExperienceBox
-            role={experiences[4].role}
-            company={experiences[4].company}
-            date={experiences[4].date}
-            description={experiences[4].description}
-            icon={FaMobileAlt}
-            fill="var(--color-blue-400)"
-            key={experiences[4].company}
-          />
         </div>
       </section>
       <section className={styles.skills} id="skills">

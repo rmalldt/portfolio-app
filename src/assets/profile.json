@@ -34,12 +34,6 @@
       "role": "Junior Web Developer",
       "date": "Oct 2021 - Apr 2022",
       "description": "Completed the TCS graduate training programme focused on Java applications and test-driven development. Contributed to the TCS in-house help desk web application, a part of the larger cross-functional TCS Ultimatix team. Refactored approximately 60% of the frontend codebase to make it modular and reusable using React.js, CSS modules, Redux and React Query. Utilised Jest for unit testing. Wrote and maintained tests for the existing Spring Boot codebase using JUnit and Mockito."
-    },
-    {
-      "company": "Corpus Ltd (Internship/Android Developer Work Experience)",
-      "role": "Android Developer",
-      "date": "May 2021 - Sep 2021",
-      "description": "Contributed to Android app development as a part of a larger team for a healthcare solutions provider. Contributed in migrating the Java codebase to Kotlin, including replacing Android AsyncTask with Kotlin Coroutines. Implemented features using the MVVM architecture, leveraging Android ViewModel for booking system. Integrated Google Firebase real-time data synchronisation.Conducted unit tests using JUnit4 and MockK, static code coverage with JaCoco, and API testing with Postman."
     }
   ],
   "skillsets": {

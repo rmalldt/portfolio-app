@@ -39,7 +39,7 @@
 
 .salut h3 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .salut span {
@@ -72,7 +72,7 @@
 
 .heading span {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.2rem;
   border-bottom: var(--border-black);
 }
 
